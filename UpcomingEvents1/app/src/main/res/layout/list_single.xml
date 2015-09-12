@@ -16,7 +16,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:text="aaaaa"
-        android:textColor="@color/festember_orange" />
+        android:textColor="@color/festember_orange"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"

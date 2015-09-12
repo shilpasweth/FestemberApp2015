@@ -37,14 +37,32 @@ public class MainActivity extends AppCompatActivity {
             {"dog","sac","W"},
             {"rat","lhc","GL"},
             {"horse","eee","P"},
+            {"chicken","barn","GL"},
+            {"rabbit","sac","W"},
+            {"dragon","lhc","GL"},
+            {"sheep","eee","P"},
+            {"snake","oat","P"},
+            {"tiger","sac","W"},
+            {"monkey","lhc","GL"},
+            {"boar","lhc","GL"},
             {"cow","oat","P"}};
 
-    int date=12,month=8;
-    int[][] time = {{date, 0, 0, date, 2, 15},
-    {date, 3, 30, date, 8, 45},
-    {date, 2, 30, date, 4, 30},
-            {date,2,15,(date+1),0,30},
-           {date,1,30,date,3,30}};
+    Calendar timeday=new GregorianCalendar(TimeZone.getTimeZone("GMT+5:30"));
+
+    int date=timeday.get(Calendar.DATE),month=8;
+    int[][] time = {{date, 10, 0, date, 12, 15},
+    {date, 13, 30, date, 18, 45},
+    {date, 12, 30, date, 14, 30},
+            {date,23,15,(date+1),0,30},
+            {date, 20, 0, date, 23, 15},
+            {date, 8, 30, date, 10, 45},
+            {date, 16, 30, date, 20, 30},
+            {date,23,15,(date+1),0,30},
+            {date,14,30,date,16,30},
+            {date, 16, 30, date, 20, 30},
+            {date,19,15,(date+1),0,30},
+            {date,17,30,date,21,30},
+           {date,11,30,date,13,30}};
     String[] Number;
     String[][] present;
     int[][] prtime;
@@ -56,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
     int timelimit=1;
     private RecyclerView mRecyclerView;
     private Toolbar mToolbar;
+
 
 
 
